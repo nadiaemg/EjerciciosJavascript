@@ -48,7 +48,7 @@ function numeroRepetido(arreglo){
 function desordenarArreglo(arreglo){
 
     for(let i = arreglo.length-1; i > 0; i--){
-        let j = Math.floor(Math.random()*i);
+        let j = parseInt(Math.random()*i);
         [arreglo[i], arreglo[j]] = [arreglo[j], arreglo[i]];
     }
     return arreglo;
